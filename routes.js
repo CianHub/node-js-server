@@ -36,7 +36,7 @@ const requestHandler = (req, res) => {
       // Will create a file (param1 and fill it with param2) synchronously
       //fs.writeFileSync('message.txt', message);
       // This one can take a callback to do when its done via implicit event listener
-      fs.writeFile('message.txt', message, err => {
+      fs.writeFile('message.txt', message, () => {
         res.statusCode = 302;
         // Redirects back to /
         res.setHeader('Location', '/');

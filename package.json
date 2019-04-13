@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "tsc": "tsc && nodemon ./build/app.js",
+    "dev": "ts-node-dev --respawn --transpileOnly ./app/app.ts",
+    "prod": "tsc && nodemon ./build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CianHub/node-js-server.git"
+  },
+  "author": "Cian O'Gralaigh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CianHub/node-js-server/issues"
+  },
+  "homepage": "https://github.com/CianHub/node-js-server#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "@types/node": "^11.13.4",
+    "express": "^4.16.4",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.4.3"
+  }
+}
